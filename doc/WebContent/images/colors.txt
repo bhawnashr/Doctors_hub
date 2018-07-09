@@ -1,0 +1,5 @@
+#faf7f1
+#e4d2b8
+<FONT 
+                        face="Verdana, Arial, Helvetica, sans-serif" 
+                        size=-1><B>Big Moose Saloon</B></FONT>

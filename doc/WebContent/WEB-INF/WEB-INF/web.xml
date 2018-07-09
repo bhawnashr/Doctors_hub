@@ -1,0 +1,52 @@
+
+  <web-app>
+<context-param>
+<param-name>driver</param-name>
+<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+</context-param>
+<context-param>
+<param-name>url</param-name>
+<param-value>jdbc:oracle:thin:@impart-:5522:xe</param-value>
+</context-param>
+<context-param>
+<param-name>uname</param-name>
+<param-value>doctor</param-value>
+</context-param>
+<context-param>
+<param-name>password</param-name>
+<param-value>doctor</param-value>
+</context-param>
+<servlet>
+		<servlet-name>UserSearch</servlet-name>
+		<display-name>Modify user</display-name>
+		<servlet-class>Project.servlet.User_search</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserSearch</servlet-name>
+		<url-pattern>/usearch</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UserSearchDelete</servlet-name>
+		<display-name>delete user</display-name>
+		<servlet-class>Project.servlet.User_search_d</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserSearchDelete</servlet-name>
+		<url-pattern>/usearchdelete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UserSearchSendMessage</servlet-name>
+		<display-name>send user</display-name>
+		<servlet-class>Project.servlet.User_search_send</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserSearchSendMessage</servlet-name>
+		<url-pattern>/usearchsend</url-pattern>
+	</servlet-mapping>
+	
+<welcome-file-list>
+		<welcome-file>Home.jsp</welcome-file>
+		<welcome-file>Logout.jsp</welcome-file>
+		
+	</welcome-file-list>
+</web-app>
